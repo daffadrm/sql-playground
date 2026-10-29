@@ -1,0 +1,38 @@
+{
+  "name": "sql-playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/copy-sqljs.mjs",
+    "dev": "next dev -p 2909",
+    "prebuild": "node scripts/copy-sqljs.mjs",
+    "build": "next build",
+    "start": "next start -p 2909",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "verify": "tsx scripts/verify-content.ts"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "lucide-react": "^1.48.0",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "sql-formatter": "^15.9.0",
+    "sql.js": "^1.14.2",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/sql.js": "^1.4.11",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "monaco-editor": "^0.52.2",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

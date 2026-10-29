@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  /* Primary brand color #18397D and its scale */
+  --color-primary-50: #eef3fb;
+  --color-primary-100: #d9e3f5;
+  --color-primary-200: #b3c6ea;
+  --color-primary-300: #7f9fd6;
+  --color-primary-400: #4c75bd;
+  --color-primary-500: #2a529f;
+  --color-primary: #18397d;
+  --color-primary-600: #18397d;
+  --color-primary-700: #132f68;
+  --color-primary-800: #0f2553;
+  --color-primary-900: #0b1b3d;
+
+  /* Status colors */
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-error: #b91c1c;
+  --color-info: #0369a1;
+}
+
+body {
+  background: #f5f7fb;
+  color: #0f172a;
+}
+
+/* Prose for lesson explanations */
+.prose-lesson p {
+  margin: 0.75rem 0;
+  line-height: 1.7;
+}
+.prose-lesson ul {
+  margin: 0.75rem 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.prose-lesson li {
+  margin: 0.25rem 0;
+  line-height: 1.6;
+}
+.prose-lesson code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.85em;
+  background: var(--color-primary-50);
+  color: var(--color-primary-700);
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+}
+.prose-lesson pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
